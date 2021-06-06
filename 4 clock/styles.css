@@ -1,0 +1,153 @@
+.container{
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.outercircle{
+     height: 900px;
+     width: 900px;    
+     border: 6px solid rgb(0, 0, 0);
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+background-color:rgb(92, 92, 92);
+
+}
+.innercircle
+{
+    box-shadow: 10px 10px 10px 10px  rgb(51, 51, 51);
+     height: 800px;
+     width: 800px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 50%;
+     position: absolute;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(58, 57, 59);
+}
+.hourhand{
+     height: 18px;
+ position: absolute;
+
+ background-color: black;
+     width: 290px;
+     border: 2px solid rgb(0, 0, 0);
+transform: rotate("39deg");
+      display: inline-block;
+border-radius: 10px;
+margin-left: 280px;
+transform-origin: right ;
+animation-name: hour;
+animation-iteration-count: infinite;
+animation-duration: 216000s;
+animation-timing-function: steps(60);
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+.secondhand{
+     height:3px;
+     position: absolute;
+     width: 450px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 10px;
+    margin-right: 250px;
+    margin-right: 250px;
+    
+     display: inline-block;
+     transform: rotate(90deg);
+     transform-origin: 77%;
+     
+     background-color: black;
+     animation-name: second;
+     animation-iteration-count: infinite;
+     animation-duration: 60s;
+     animation-timing-function: steps(60);
+
+}
+.minutehand{
+    background-color: black;
+    border-radius: 10px;
+    height:10px;
+    position: absolute;
+    width: 330px;
+    transform: rotate(32deg);
+    transform-origin: right;
+    margin-right: 350px;
+    border: 2px solid rgb(0, 0, 0);
+    display: inline-block;
+    animation-name: minute;
+    animation-iteration-count: infinite;
+    animation-duration: 3600s;
+    animation-timing-function: steps(60);
+
+}
+     
+@keyframes second{
+    from{
+transform: rotate(0deg);
+
+    }
+    to{
+transform: rotate(360deg);
+
+    }
+}
+@keyframes minute{
+    from{
+transform: rotate(0deg);
+
+    }
+    to{
+transform: rotate(360deg);
+
+    }
+}
+@keyframes hour{
+    from{
+transform: rotate(0deg);
+
+    }
+    to{
+transform: rotate(360deg);
+
+    }
+}
+
+.h3{
+ font-size: 80px;
+ font-weight: bold;
+ position: absolute;
+ color: rgb(134, 133, 134);
+
+ right: 0%;
+}
+.h6
+{
+font-size: 80px;
+font-weight: bold;
+position: absolute;
+color: rgb(134, 133, 134);
+bottom: 0%;
+}
+.h9{
+font-size: 80px;
+font-weight: bold;
+position: absolute;
+left: 0%;
+color: rgb(134, 133, 134);
+}
+.h12{
+font-size: 80px;
+font-weight: bold;
+position: absolute;
+color: rgb(134, 133, 134);
+top: 0%;
+}
