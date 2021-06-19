@@ -1,0 +1,93 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Montserrat',sans-serif;
+background-color: #ebedef;
+    margin: 0;
+    padding: 0%;
+}
+h1{
+    color: rgb(240, 116, 15);
+    margin-top: 0;
+    margin-bottom: 0%;
+    font-size: 20px;
+}
+.container{
+    width: 230px;
+    margin: auto;
+    text-align: center;
+border-bottom:2px solid rgb(253, 135, 0);
+}
+.calculator{
+   
+    display: inline-block;
+    text-align: center;
+    margin-top: 245px;
+    /* margin-left: 890px; */
+    background-color: black;
+    padding:0px 20px;
+    height: 650px;
+    width: 320px;
+    border-radius: 15px;
+}
+.red{
+    background-color: tomato;
+}
+.grey{
+    background-color: grey;
+}
+input{
+    height: 120px;
+    width: 300px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+
+ font-size: 30px;
+ border: 2px solid black;
+ border-bottom: 2px solid grey;
+}
+table{
+    /* margin: auto; */
+    padding-top: 40px;
+    height: 400px;
+    width: 320px;
+
+}
+
+button{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: black;
+color: white;
+padding: 20px;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+border: 1px solid grey;
+}
+
+
+
+
+
+if(root==NULL){
+    return 0;
+}
+
+
+
+else{
+int lheight=height(root->left);
+int rheight=height(root->right);
+if(lheight>rheight){
+  return (lheight+1);
+}
+else if{
+  return (rheight+1);
+}
+}
