@@ -1,0 +1,40 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: inline-block;
+    height: 600px;
+    width: 600px;
+
+    padding: 0;
+    margin-left: 600px;
+    margin-top: 150px;
+    text-align: center;
+    
+ }
+.box{
+display: inline-block;
+border: 0.5px solid rgb(179, 52, 52);
+overflow: hidden;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(209, 7, 7);
+    padding: 10px;
+    margin: -2px;
+}   
+.img{
+    height: 30px;
+    background:white ;
+
+
+}
+.white{
+    background-color: white;
+}
+/* div:active{
+background-color: rgb(252, 252, 252);
+
+} */
