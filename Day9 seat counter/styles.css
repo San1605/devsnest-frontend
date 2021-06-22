@@ -26,6 +26,15 @@ display: inline-block;
 margin-left: 0;
 
 }
+#h21{
+    margin-left: 680px;
+
+    display: inline-block;
+}
+#h2{
+    display: inline-block;
+    margin-left: 550px 
+}
  .boss
  {
     display: flex;
