@@ -17,7 +17,16 @@ window.onload = () => {
     // document.querySelector("div").style.color="white";
     // })
 // }
-       
+    //   to amke many divs
+
+for(var i=0;i<700;i++){
+   var box= document.createElement("div");
+    var x= document.getElementsByClassName("container");
+    x[0].appendChild(box)
+    box.classList.add("box")
+}
+
+
 
 
 var divs =document.getElementsByClassName("box");
@@ -32,5 +41,32 @@ this.classList.toggle("white")
     window.location.reload("Refresh")
         })
        
-    
+        var y= document.getElementsByClassName("container");
+        var frames=[1];
+  for(var i=0;i<y.length;i++)
+{
+    y[i].addEventListener("click",function () {
+        frames.push(this);
+          frames[i].classList.add("white")
+    })
+}
+console.log(frames)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
