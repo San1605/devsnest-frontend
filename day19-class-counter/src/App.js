@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+
+class App extends Component {
+constructor(){
+  super()
+  this.state={
+    value1:0,
+    value2:0,
+    value3:0,
+    value4:0
+  }
 }
 
+  render() {
+    const handleClick1=()=>{
+      this.setState(
+      {
+       value: this.state.value1+=1
+      }
+    )}
+    const handleClick2=()=>{
+      this.setState(
+      {
+       value: this.state.value2+=1
+      }
+    )}
+    const handleClick3=()=>{
+      this.setState(
+      {
+       value: this.state.value3+=1
+      }
+    )}
+    const handleClick4=()=>{
+      this.setState(
+      {
+       value: this.state.value4+=1
+      }
+    )}
+    return (
+      <div className="container">
+        <button className="btn1" onClick={handleClick1}>{this.state.value1}</button>
+        <button className="btn2" onClick={handleClick2}>{this.state.value2}</button>
+        <button className="btn3" onClick={handleClick3}>{this.state.value3}</button>
+        <button className="btn4" onClick={handleClick4}>{this.state.value4}</button>
+      </div>
+    )
+}
+} 
 export default App;
