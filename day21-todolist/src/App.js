@@ -1,24 +1,24 @@
 import './App.css';
 import React, { useState, useEffect } from "react"
 const Item = ({ item, setItems, index, items, setIsEditing, setCurrentTodo }) => {
-     function handleEditClick(item) {
-          setIsEditing(true);
-          setCurrentTodo({ ...item });
-     }
+//      function handleEditClick(item) {
+//           setIsEditing(true);
+//           setCurrentTodo({ ...item });
+//      }
 
-     return (
-          <div>
-               <h1>{item.name}</h1>
-               <h2>{item.calorie}</h2>
-               <button onClick={() => {
-                    const newItems = items.filter((el, i) => i !== index)
-                    setItems(newItems)
-               }
-               }>Delete</button>
-               <button onClick={() => handleEditClick(item)}>Edit</button>
-          </div>
-     )
-}
+//      return (
+//           <div>
+//                <h1>{item.name}</h1>
+//                <h2>{item.calorie}</h2>
+//                <button onClick={() => {
+//                     const newItems = items.filter((el, i) => i !== index)
+//                     setItems(newItems)
+//                }
+//                }>Delete</button>
+//                <button onClick={() => handleEditClick(item)}>Edit</button>
+//           </div>
+//      )
+// }
 function App(props) {
      const [state, setState] = useState(
           {
@@ -51,37 +51,37 @@ function App(props) {
 
      }
 
-     const [isEditing, setIsEditing] = useState(false);
-     const [currentTodo, setCurrentTodo] = useState({});
+     // const [isEditing, setIsEditing] = useState(false);
+     // const [currentTodo, setCurrentTodo] = useState({});
 
 
 
-     function handleEditInputChange(e) {
+     // function handleEditInputChange(e) {
 
-          setCurrentTodo({ ...currentTodo, text: e.target.value });
-          console.log(currentTodo);
-     }
-
-
-
-     function handleEditFormSubmit(e) {
-          e.preventDefault();
-
-          handleUpdateTodo(currentTodo.id, currentTodo);
-     }
+     //      setCurrentTodo({ ...currentTodo, text: e.target.value });
+     //      console.log(currentTodo);
+     // }
 
 
 
-     function handleUpdateTodo(id, updatedItem) {
+     // function handleEditFormSubmit(e) {
+     //      e.preventDefault();
 
-          const updatedItem1 = items.map((state) => {
-               return state.id === id ? updatedItem : state;
-          });
+     //      handleUpdateTodo(currentTodo.id, currentTodo);
+     // }
 
-          setIsEditing(false);
 
-          setState(updatedItem1);
-     }
+
+     // function handleUpdateTodo(id, updatedItem) {
+
+     //      const updatedItem1 = items.map((state) => {
+     //           return state.id === id ? updatedItem : state;
+     //      });
+
+     //      setIsEditing(false);
+
+     //      setState(updatedItem1);
+     // }
 
 
 
@@ -92,7 +92,7 @@ function App(props) {
 
                {isEditing ? (
 
-                    <form onSubmit={handleEditFormSubmit}>
+                    {/* <form onSubmit={handleEditFormSubmit}>
 
                          <h2>Edit Todo</h2>
 
@@ -109,7 +109,7 @@ function App(props) {
                          <button type="submit">Update</button>
 
                          <button onClick={() => setIsEditing(false)}>Cancel</button>
-                    </form>
+                    </form> */}
                ) : (
                     <form>
                          <label>

@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.app.dark{
+    background-color: black;
+    color: white;
+}
+
+.theme-toggle{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    
+}
+.theme-toggle.dark{
+
+    background-color: black;
+    color: white;
+    
+}
+

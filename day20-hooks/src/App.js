@@ -16,16 +16,16 @@ const Card = (name, calories, index, Cards, setCards) => {
 }
 function App(index) {
   const [Cards, setCards] = useState([])
-  function add() {
-    setCards([...Cards])
-  }
+  // function add() {
+  //   setCards([...Cards])
+  // }    
   return (
     <div className="container1">
 
       <h1 className="a">
         Diet Chart
       </h1>
-      <Card name="Pizza" calories="56" keys={index} cards={Cards} setCards={setCards} index={index} add={add} />
+      <Card name="Pizza" calories="56" keys={index} cards={Cards} setCards={setCards} index={index} />
       <Card name="Burger" calories="69" keys={index} cards={Cards} setCards={setCards} index={index} />
       <Card name="Coke" calories="500" keys={index} cards={Cards} setCards={setCards} index={index} />
       <Card name="Brownie" calories="180" keys={index} cards={Cards} setCards={setCards} index={index} />
